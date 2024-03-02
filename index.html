@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>React course</title>
+  <style>
+
+   .heading{
+
+    color:red;
+
+   } 
+  </style>
+
+
+</head>
+<body>
+  
+
+
+  <div class="heading" id="root"> 
+
+    <h1> Hello World</h1>
+
+  </div>
+
+  <script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>
+  <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+</body>
+
+<script>
+
+const heading  = document.createElement('h1'); // adding heading
+heading.innerHTML="Hello World from js";      // adding text
+
+document.getElementById('root').appendChild(heading) // adding the new element to root element
+
+
+
+</script>
+</html>
+
